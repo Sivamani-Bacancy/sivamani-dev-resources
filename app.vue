@@ -3,7 +3,7 @@
     <header class="sticky top-0 bg-white dark:bg-gray-900 shadow-sm backdrop-blur-md bg-opacity-80 dark:bg-opacity-80 z-10">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center gap-2">
-          <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Logo" class="w-8 h-8 rounded-md" />
+          <img src="/public/images/4884785.jpg" alt="Logo" class="w-8 h-8 rounded-md" />
           <h1 class="text-xl font-bold text-gray-800 dark:text-white">Dev Resources Hub</h1>
         </div>
         <div class="flex items-center gap-4">
