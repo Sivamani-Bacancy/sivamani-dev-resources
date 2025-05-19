@@ -62,5 +62,12 @@ export const categories: Category[] = [
     description: 'Resources for learning web development',
     icon: '🧠',
     color: 'bg-orange-500'
+  },
+  {
+    id: 'git-tools',
+    name: 'Git Tools',
+    description: 'Tools for working with Git repositories',
+    icon: '🗂️',
+    color: 'bg-gray-500'
   }
 ];

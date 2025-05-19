@@ -364,6 +364,20 @@ export const links: Link[] = [
     description: 'React/Next.js Framework',
     categoryId: 'ui-components'
   },
+  {
+    id: 'framer',
+    title: 'Framer',
+    url: 'https://www.framer.com/',
+    description: 'Portfolio Designs',
+    categoryId: 'ui-components'
+  },
+  {
+    id: 'inika-desktop',
+    title: 'Inika Desktop',
+    url: 'https://inikasdesktop.framer.website/',
+    description: 'Inspired by Mac UI using Framer',
+    categoryId: 'ui-components'
+  },
 
   // JS Libraries
   {
@@ -492,13 +506,7 @@ export const links: Link[] = [
     description: 'JS Animated',
     categoryId: 'js-libraries'
   },
-  {
-    id: 'animejs-2',
-    title: 'Anime.js (2)',
-    url: 'https://animejs.com/',
-    description: 'JS Animated',
-    categoryId: 'js-libraries'
-  },
+
   {
     id: 'uv-canvas',
     title: 'UV Canvas',
@@ -525,6 +533,62 @@ export const links: Link[] = [
     title: 'Vanta.js',
     url: 'https://www.vantajs.com/',
     description: 'Animated 3D backgrounds',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'playcanvas-react',
+    title: 'PlayCanvas React',
+    url: 'https://playcanvas-react.vercel.app/docs',
+    description: '3D app library React',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'swapy',
+    title: 'Swapy',
+    url: 'https://swapy.tahazsh.com/',
+    description: 'JS library draggable boxes',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'jj811208-repos',
+    title: 'JJ811208 Repos',
+    url: 'https://github.com/jj811208?tab=repositories',
+    description: 'Animated Login etc',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'rosencharts',
+    title: 'RosenCharts',
+    url: 'https://rosencharts.com/',
+    description: 'React Charts',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'threejs',
+    title: 'Three.js',
+    url: 'https://threejs.org/',
+    description: 'JavaScript 3D library',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'babylonjs',
+    title: 'Babylon.js',
+    url: 'https://www.babylonjs.com/',
+    description: '3D rendering engine',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'pixijs',
+    title: 'Pixi.js',
+    url: 'https://pixijs.com/',
+    description: '2D WebGL renderer',
+    categoryId: 'js-libraries'
+  },
+  {
+    id: 'matterjs',
+    title: 'Matter.js',
+    url: 'https://brm.io/matter-js/',
+    description: '2D physics engine',
     categoryId: 'js-libraries'
   },
 
@@ -982,5 +1046,47 @@ export const links: Link[] = [
     url: 'https://andreasbm.github.io/',
     description: 'Learn almost everything in web development docs',
     categoryId: 'learning'
+  },
+  {
+    "id": "deepwiki-android-architecture-templates",
+    "title": "DeepWiki Android Architecture Templates",
+    "url": "https://deepwiki.com/android/architecture-templates",
+    "description": "Replace github.com with deepwiki.com for any repo to get summarized insights.",
+    "categoryId": "git-tools"
+  },
+  {
+    "id": "gitsummarize-android-architecture-templates",
+    "title": "GitSummarize Android Architecture Templates",
+    "url": "https://gitsummarize.com/android/architecture-templates",
+    "description": "Replace github.com with gitsummarize.com for any repo to get summarized insights.",
+    "categoryId": "git-tools"
+  },
+  {
+    "id": "chat-forgithub-android-architecture-templates",
+    "title": "Chat for GitHub - Android Architecture Templates",
+    "url": "https://chat.forgithub.com/android/architecture-templates",
+    "description": "Replace github.com with chat.forgithub.com for any repo to get summarized insights.",
+    "categoryId": "git-tools"
+  },
+  {
+    "id": "deepwiki-ingest-android-architecture-templates",
+    "title": "DeepWiki LLM Ingest - Android Architecture Templates",
+    "url": "https://deepwiki.ingest.com/android/architecture-templates",
+    "description": "Replace github.com with deepwiki.ingest.com for any repo to get summarized insights.",
+    "categoryId": "git-tools"
+  },
+  {
+    "id": "deepwiki-diagram-android-architecture-templates",
+    "title": "DeepWiki Diagram - Android Architecture Templates",
+    "url": "https://deepwiki.diagram.com/android/architecture-templates",
+    "description": "Replace github.com with deepwiki.diagram.com for any repo to get summarized insights.",
+    "categoryId": "git-tools"
+  },
+  {
+    "id": "deepwiki-dev-android-architecture-templates",
+    "title": "DeepWiki VS Code Dev - Android Architecture Templates",
+    "url": "https://deepwiki.dev/android/architecture-templates",
+    "description": "Replace github.com with deepwiki.dev for any repo to get summarized insights.",
+    "categoryId": "git-tools"
   }
 ];
