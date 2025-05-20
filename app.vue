@@ -47,7 +47,7 @@
                   v-for="category in categories"
                   :key="category.id"
                   :category="category"
-                  :is-active="selectedCategory === category.id"
+                  :is-active="!showFavorites && selectedCategory === category.id"
                   @select="setCategory"
                 />
               </div>
@@ -149,7 +149,7 @@
     const category = categories.find(c => c.id === selectedCategory.value);
     return category ? category.name : '';
   });
-
+  
   // Filter links based on search query, category, and favorites
   const filteredLinks = computed(() => {
     let filtered = links;

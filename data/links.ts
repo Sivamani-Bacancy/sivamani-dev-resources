@@ -536,6 +536,41 @@ export const links: Link[] = [
     categoryId: 'js-libraries'
   },
   {
+    id:'fuse-js',
+    title: 'Fuse.js',
+    url: 'https://www.fusejs.io/',
+    description: 'Fuse.js that provides search capability without any backend.',
+    categoryId: 'js-libraries'
+  },
+  {
+    id:'party-js',
+    title: 'Party.js',
+    url: 'https://party.js.org/',
+    description: 'Party.js is a JavaScript library for creating celebratory animations and effects.',
+    categoryId: 'js-libraries'
+  },
+  {
+    id:'day-js',
+    title: 'Day.js',
+    url: 'https://day.js.org/',
+    description: 'Day.js is a lightweight JavaScript library for parsing, validating, manipulating, and formatting dates.',
+    categoryId: 'js-libraries'
+  },
+  {
+    id:'scrollreveal',
+    title: 'Scroll Reveal',
+    url: 'https://scrollrevealjs.org/',
+    description: 'ScrollReveal is a JavaScript library for easily animating elements as they scroll into view.',
+    categoryId: 'js-libraries'
+  },
+  {
+    id:'idraw-js',
+    title: 'iDraw.js',
+    url: 'https://idrawjs.com/',
+    description: 'iDraw.js is a JavaScript library for creating interactive and animated drawings on the web.',
+    categoryId: 'js-libraries'
+  },
+  {
     id: 'playcanvas-react',
     title: 'PlayCanvas React',
     url: 'https://playcanvas-react.vercel.app/docs',
@@ -554,6 +589,13 @@ export const links: Link[] = [
     title: 'JJ811208 Repos',
     url: 'https://github.com/jj811208?tab=repositories',
     description: 'Animated Login etc',
+    categoryId: 'js-libraries'
+  },
+  {
+    id:'peep-lab',
+    title: 'Peep Lab',
+    url: 'https://peepslab.com/',
+    description: 'Peep Lab is a JavaScript library for creating interactive and animated illustrations.',
     categoryId: 'js-libraries'
   },
   {
@@ -852,13 +894,6 @@ export const links: Link[] = [
     title: 'Tesseract',
     url: 'https://tesseract.projectnaptha.com/',
     description: 'Extract text from images',
-    categoryId: 'dev-tools'
-  },
-  {
-    id: 'netlify-drop',
-    title: 'Netlify Drop',
-    url: 'https://app.netlify.com/drop',
-    description: 'Publish ur website in < 10 sec',
     categoryId: 'dev-tools'
   },
 
@@ -1221,6 +1256,49 @@ export const links: Link[] = [
     url: 'https://chat.openai.com/',
     description: 'AI conversational assistant by OpenAI for versatile tasks',
     categoryId: 'ai-tools'
-  }
+  },
+
+  {
+  id: 'github-pages',
+  title: 'GitHub Pages',
+  url: 'https://pages.github.com/',
+  description: 'Free static site hosting directly from GitHub repositories',
+  categoryId: 'hosting'
+},
+{
+  id: 'netlify',
+  title: 'Netlify',
+  url: 'https://www.netlify.com/',
+  description: 'Powerful platform for deploying static sites and serverless functions',
+  categoryId: 'hosting'
+},
+{
+  id: 'vercel',
+  title: 'Vercel',
+  url: 'https://vercel.com/',
+  description: 'Optimized platform for frontend frameworks and static sites',
+  categoryId: 'hosting'
+},
+{
+  id: 'render',
+  title: 'Render',
+  url: 'https://render.com/',
+  description: 'Unified cloud platform for static sites, web apps, and databases',
+  categoryId: 'hosting'
+},
+{
+  id: 'surge',
+  title: 'Surge',
+  url: 'https://surge.sh/',
+  description: 'Simple, single-command web publishing for Frontend developers',
+  categoryId: 'hosting'
+},
+{
+    id: 'netlify-drop',
+    title: 'Netlify Drop',
+    url: 'https://app.netlify.com/drop',
+    description: 'Publish ur website in less than 10 sec',
+    categoryId: 'hosting'
+  },
 
 ];
