@@ -1,6 +1,7 @@
 <template>
     <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <header class="sticky top-0 bg-white dark:bg-gray-900 shadow-sm backdrop-blur-md bg-opacity-80 dark:bg-opacity-80 z-10">
+        
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
           <div class="flex items-center gap-2">
             <img src="/public/images/4884785.jpg" alt="Logo" class="w-8 h-8 rounded-md" />
@@ -110,6 +111,16 @@
   import ThemeToggle from './components/ThemeToggle.vue';
   import { useThemeStore } from './store/theme';
   import { useFavoritesStore } from './store/favorites';
+
+  useHead({
+  script: [
+    {
+      async: true,
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8497980432067899',
+      crossorigin: 'anonymous'
+    }
+  ]
+  });
 
   const searchQuery = ref('');
   const selectedCategory = ref('color-tools'); // Default category
