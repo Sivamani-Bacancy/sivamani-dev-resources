@@ -39,7 +39,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { computed } from 'vue';
+import { useFavoritesStore } from '../store/favorites';
 
 const props = defineProps({
   link: {
@@ -48,26 +49,13 @@ const props = defineProps({
   }
 });
 
-const isFavorite = ref(false);
+// Use the favorites store
+const favoritesStore = useFavoritesStore();
 
-onMounted(() => {
-  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-  isFavorite.value = favorites.includes(props.link.id);
-});
+// Compute if the link is in favorites
+const isFavorite = computed(() => favoritesStore.isFavorite(props.link.id));
 
 function toggleFavorite() {
-  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-  
-  if (isFavorite.value) {
-    const index = favorites.indexOf(props.link.id);
-    if (index !== -1) {
-      favorites.splice(index, 1);
-    }
-  } else {
-    favorites.push(props.link.id);
-  }
-  
-  localStorage.setItem('favorites', JSON.stringify(favorites));
-  isFavorite.value = !isFavorite.value;
+  favoritesStore.toggleFavorite(props.link.id);
 }
 </script>

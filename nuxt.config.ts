@@ -9,6 +9,10 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css'
   ],
+  buildModules: [
+    // Needed for Pinia
+    '@pinia/nuxt',
+  ],
   app: {
     head: {
       title: 'Dev Resources Hub',
