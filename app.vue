@@ -1,4 +1,4 @@
-  <template>
+<template>
     <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <header class="sticky top-0 bg-white dark:bg-gray-900 shadow-sm backdrop-blur-md bg-opacity-80 dark:bg-opacity-80 z-10">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -108,22 +108,23 @@
   import LinkCard from './components/LinkCard.vue';
   import SearchBar from './components/SearchBar.vue';
   import ThemeToggle from './components/ThemeToggle.vue';
+  import { useThemeStore } from './store/theme';
+  import { useFavoritesStore } from './store/favorites';
 
   const searchQuery = ref('');
   const selectedCategory = ref('color-tools'); // Default category
   const showFavorites = ref(false);
-  const favoriteLinkIds = ref([]);
+  
+  // Use Pinia store for favorites
+  const favoritesStore = useFavoritesStore();
+  
+  // Use theme store
+  const themeStore = useThemeStore();
 
   onMounted(() => {
-    // Load favorites from localStorage
-    favoriteLinkIds.value = JSON.parse(localStorage.getItem('favorites') || '[]');
-    
-    // Watch for changes to favorites
-    window.addEventListener('storage', (event) => {
-      if (event.key === 'favorites') {
-        favoriteLinkIds.value = JSON.parse(event.newValue || '[]');
-      }
-    });
+    // Initialize stores
+    themeStore.initTheme();
+    favoritesStore.initFavorites();
   });
 
   // Set active category
@@ -144,7 +145,7 @@
     
     // Filter by favorites if showing favorites
     if (showFavorites.value) {
-      filtered = filtered.filter(link => favoriteLinkIds.value.includes(link.id));
+      filtered = filtered.filter(link => favoritesStore.isFavorite(link.id));
     } 
     // Otherwise filter by category
     else {
