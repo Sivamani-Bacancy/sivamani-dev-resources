@@ -19,6 +19,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useThemeStore } from '~/store/theme';
+import { useFavoritesStore } from '../store/favorites';
+
 
 defineProps({
   category: {
@@ -34,4 +36,9 @@ defineProps({
 defineEmits(["select"]);
 
 const isDarkMode = useThemeStore()
+// Use the favorites store
+const favoritesStore = useFavoritesStore();
+
+// Compute if the link is in favorites
+const isFavorite = computed(() => favoritesStore.getFavorites);
 </script>

@@ -83,5 +83,12 @@ export const categories: Category[] = [
     description: 'AI-powered tools for various tasks',
     icon: '🤖',
     color: 'bg-lime-500',
+  },
+  {
+    id:'hosting',
+    name: 'Free Hosting Websites',
+    description: 'Free hosting services for your projects',
+    icon: '🌐', 
+    color: 'bg-emerald-500',
   }
 ];
