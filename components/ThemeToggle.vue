@@ -1,11 +1,11 @@
 <template>
   <button
-    @click="toggleDarkMode"
+    @click="themeStore.toggleTheme()"
     class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
     aria-label="Toggle dark mode"
   >
     <svg
-      v-if="isDark"
+      v-if="themeStore.isDark"
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5 text-yellow-500"
       fill="none"
@@ -38,40 +38,20 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { useHead } from '#imports';
+import { useThemeStore } from '~/store/theme';
 
-const isDark = ref(false);
+const themeStore = useThemeStore();
 
 onMounted(() => {
-  // Check if user has a theme preference stored
-  const savedTheme = localStorage.getItem('theme');
-  
-  // Set theme based on saved preference or system preference
-  if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    isDark.value = true;
-    document.documentElement.classList.add('dark');
-  } else {
-    isDark.value = false;
-    document.documentElement.classList.remove('dark');
-  }
+  // Initialize theme on component mount
+  themeStore.initTheme();
 });
-
-const toggleDarkMode = () => {
-  isDark.value = !isDark.value;
-  
-  if (isDark.value) {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-  }
-};
 
 useHead({
   htmlAttrs: {
-    // We'll control the 'dark' class through the toggleDarkMode function
+    // We'll control the 'dark' class through the theme store
     // This is just to ensure proper setup with nuxt head management
     class: ''
   }

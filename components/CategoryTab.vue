@@ -2,7 +2,10 @@
   <div
     class="px-4 py-3 rounded-lg cursor-pointer transition-all duration-200"
     :class="[
-      isActive ? `${category.color} text-white font-semibold` : 'hover:bg-gray-100 dark:hover:bg-gray-800',
+      isActive 
+        ? `${category.color} font-semibold shadow-md` 
+          + (isDarkMode.isDark === true ? ' text-white' : ' text-black bg-white')
+        : 'hover:bg-gray-100 text-gray-500',
     ]"
     @click="$emit('select', category.id)"
   >
@@ -14,16 +17,21 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+import { useThemeStore } from '~/store/theme';
+
 defineProps({
   category: {
     type: Object,
-    required: true
+    required: true,
   },
   isActive: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 
-defineEmits(['select']);
+defineEmits(["select"]);
+
+const isDarkMode = useThemeStore()
 </script>
