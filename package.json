@@ -13,8 +13,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.19",
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia/nuxt": "^0.11.0",
     "@vueuse/core": "^10.9.0",
-    "nuxt": "^3.13.0"
+    "nuxt": "^3.13.0",
+    "pinia": "^3.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.18",

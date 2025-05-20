@@ -69,5 +69,19 @@ export const categories: Category[] = [
     description: 'Tools for working with Git repositories',
     icon: '🗂️',
     color: 'bg-gray-500'
+  },
+  {
+    id:'vs-code extensions', 
+    name: 'VS Code Extensions',
+    description: 'Extensions for Visual Studio Code to enhance your development experience',
+    icon: '🖥️' ,
+    color: 'bg-teal-500',
+  },
+  {
+    id:'ai-tools',
+    name: 'AI Tools',
+    description: 'AI-powered tools for various tasks',
+    icon: '🤖',
+    color: 'bg-lime-500',
   }
 ];

@@ -1088,5 +1088,139 @@ export const links: Link[] = [
     "url": "https://deepwiki.dev/android/architecture-templates",
     "description": "Replace github.com with deepwiki.dev for any repo to get summarized insights.",
     "categoryId": "git-tools"
+  },
+  {
+    id: 'json-crack',
+    title: 'JSON Crack',
+    url: 'https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode',
+    description: 'Seamlessly visualize your JSON data instantly into graphs.',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id: 'auto-close-tag',
+    title: 'Auto Close Tag',
+    url: 'https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag',
+    description: 'Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id:'auto-complete-tag',
+    title: 'Auto Complete Tag',
+    url: 'https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag',
+    description: 'Auto complete HTML/XML tag',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id: 'auto-rename-tag',
+    title: 'Auto Rename Tag',
+    url: 'https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag',
+    description: 'Auto rename paired HTML/XML tag',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id:'colorize',
+    title: 'Colorize',
+    url: 'https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize',
+    description: 'Colorize CSS colors in your editor',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id:'file-tree-extractor',
+    title: 'File Tree Extractor',
+    url: 'https://marketplace.visualstudio.com/items?itemName=Fuzionix.file-tree-extractor',
+    description: 'Extracts the file tree of your project and saves it as a JSON file',
+    categoryId: 'vs-code extensions'
+  } ,
+  {
+    id:'highlight-matching-tag',
+    title: 'Highlight Matching Tag',
+    url: 'https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag',
+    description: 'Highlight matching HTML/XML tag',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id:'inline-fold-css',
+    title: 'Inline Fold CSS',
+    url: 'https://marketplace.visualstudio.com/items?itemName=ctf0.inline-fold-new',
+    description: 'Inline fold CSS',
+    categoryId: 'vs-code extensions'
+  },
+  {
+    id: 'blackbox-ai',
+    title: 'Blackbox AI',
+    url: 'https://blackbox.ai/',
+    description: 'AI-powered coding assistant for developers',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'lovable-ai',
+    title: 'Lovable AI',
+    url: 'https://lovable.ai/',
+    description: 'AI tools designed to enhance creativity and productivity',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'gemini-ai',
+    title: 'Gemini AI',
+    url: 'https://gemini.com/', // Confirm URL, placeholder used
+    description: 'Next-generation AI assistant by Google DeepMind',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'claude-ai',
+    title: 'Claude AI',
+    url: 'https://claude.ai/',
+    description: 'Conversational AI assistant by Anthropic',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'code-ai',
+    title: 'Code AI',
+    url: 'https://code.ai/', // Confirm URL, placeholder used
+    description: 'AI-powered code generation and completion tool',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'notion-ai',
+    title: 'Notion AI',
+    url: 'https://www.notion.so/product/ai',
+    description: 'AI-powered workspace for note-taking and collaboration',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'miro-ai',
+    title: 'Miro AI',
+    url: 'https://miro.com/ai/',
+    description: 'Collaborative online whiteboard with AI enhancements',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'bolt-new',
+    title: 'Bolt.new',
+    url: 'https://bolt.new/',
+    description: 'Quick and easy app creation powered by AI',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'same-new',
+    title: 'Same.new',
+    url: 'https://same.new/',
+    description: 'Instant creation of collaborative workspaces',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'replit',
+    title: 'Replit',
+    url: 'https://replit.com/',
+    description: 'Collaborative online coding environment with AI features',
+    categoryId: 'ai-tools'
+  },
+  {
+    id: 'chatgpt',
+    title: 'ChatGPT',
+    url: 'https://chat.openai.com/',
+    description: 'AI conversational assistant by OpenAI for versatile tasks',
+    categoryId: 'ai-tools'
   }
+
 ];
