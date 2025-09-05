@@ -232,6 +232,20 @@ export const links: Link[] = [
     categoryId: 'ui-components'
   },
   {
+    id:'ui-mantine', 
+    title: 'Mantine',
+    url: 'https://ui.mantine.dev/',
+    description: 'React components',
+    categoryId: 'ui-components'
+  },
+  {
+    id:'prime-vue',
+    title: 'PrimeVue',
+    url: 'https://primevue.org/nuxt/',
+    description: 'Vue.js components',
+    categoryId: 'ui-components'
+  },
+  {
     id: 'prismane',
     title: 'Prismane',
     url: 'https://www.prismane.io/',
@@ -1300,5 +1314,32 @@ export const links: Link[] = [
     description: 'Publish ur website in less than 10 sec',
     categoryId: 'hosting'
   },
-
+  {
+    id:'trae-ai',
+    title: 'Trae AI',
+    url: 'https://trae.ai/',
+    description: 'AI-powered code review and analysis tool',
+    categoryId: 'ai-editor'
+  },
+  {
+    id:'codeium',
+    title: 'Codeium',
+    url: 'https://windsurf.com/',
+    description: 'AI-powered code completion and suggestion tool',
+    categoryId: 'ai-editor'
+  },
+  {
+    id:'atom-editor',
+    title: 'Atom Editor',
+    url: 'https://atom-editor.cc/',
+    description: 'A hackable text editor for the 21st century',
+    categoryId: 'ai-editor'
+  },
+  {
+    id:'cursor-ai',
+    title: 'Cursor AI',
+    url: 'https://www.cursor.com/',
+    description: 'AI-powered code editor with smart suggestions',
+    categoryId: 'ai-editor'
+  }
 ];
