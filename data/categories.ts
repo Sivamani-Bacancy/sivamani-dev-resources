@@ -90,5 +90,13 @@ export const categories: Category[] = [
     description: 'Free hosting services for your projects',
     icon: '🌐', 
     color: 'bg-emerald-500',
-  }
+  },
+  {
+    id:'ai-editor',
+    name: 'AI Code Editor',
+    description: 'AI-powered code editor for various programming languages',
+    icon: '📝',
+    color: 'bg-cyan-500',
+  },
+
 ];
